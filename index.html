@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secondary School No. 1 of Gorodok named after I. Kh. Bagramyan</title>
+    <style>
+        /* General styles and variables */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        /* Official Welcome Section */
+        .welcome-section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 6px solid var(--primary-color);
+        }
+
+        .welcome-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .welcome-section p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            background-color: #ddd;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        /* "New Stupid Rules" Section */
+        .rules-section {
+            background-color: #fff3cd;
+            border: 2px dashed #ffc107;
+            padding: 2.5rem;
+            border-radius: 12px;
+            position: relative;
+            margin-bottom: 3rem;
+        }
+
+        .rules-section::before {
+            content: "⚠️ Attention!";
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background-color: #ffc107;
+            color: #333;
+            padding: 5px 15px;
+            font-weight: bold;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        .rules-section h2 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            font-size: 1.6rem;
+        }
+
+        .rules-section p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .rules-section .highlight {
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 2rem;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.6rem; }
+            .welcome-section h2 { font-size: 1.5rem; }
+            .gallery img { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Secondary School No. 1 of Gorodok named after I. Kh. Bagramyan</h1>
+        <p>Vitebsk Region | Education • Traditions • Innovations</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Official Information -->
+        <section class="welcome-section">
+            <h2>Welcome to Our School!</h2>
+            <p><strong>Our school is not just an educational institution, but a large and friendly family</strong>, where every child can unlock their intellectual, creative, and spiritual potential. We are proud to lay a solid foundation for the future success of our graduates, combining the classical traditions of Belarusian education with innovative approaches.</p>
+            <p>We were the first in the republic to receive this status, actively developing in our students the values of humanism, mutual assistance, and patriotism.</p>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section class="gallery">
+            <!-- Photo 1: Assembly Hall -->
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAABAAEBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA=" alt="School assembly in the hall">
+            <!-- Photo 2: Volleyball -->
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAABAAEBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA=" alt="Students playing volleyball">
+            <!-- Photo 3: School Entrance -->
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAABAAEBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA=" alt="School entrance with Welcome sign">
+            <!-- Photo 4: Playground -->
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////wgALCAABAAEBAREA/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/aAAgBAQABPxA=" alt="Students on the playground">
+        </section>
+
+        <!-- Student's Rules Section -->
+        <section class="rules-section">
+            <h2>New Stupid Rules</h2>
+            <p>If you thought you were coming here just to study, you were mistaken. Now we are surviving under a strict regime: Someone upstairs decided that <span class="highlight">loose hair</span> somehow interferes with learning math, so at the new parent meeting they said we must always have our hair braided.</p>
+            <p><span class="highlight">Forgetting your uniform</span> is now a sin worse than skipping a physics test. Without a uniform, you'll be greeted at the entrance as if you came to rob a bank, not to gnaw on the granite of science.</p>
+            <p>Free style? Forget it. Dressing for the weather or the way you feel comfortable? Yeah, roll your lip back in. <strong>A robot must be in its shell</strong>, so we put on our jackets and don't rebel.</p>
+            <p>For those who want to go here, I only have my condolences because <em>half of my class is unhinged. And so am I. Just a little bit.</em></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 State Educational Institution "Secondary School No. 1 of Gorodok named after I. Kh. Bagramyan". All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
